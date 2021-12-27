@@ -1,10 +1,10 @@
 body {
-  background-color: yellow;
+  background-color: lime;
 }
 
 .blink_me {
   animation: blinker 2s linear infinite;
-  color: blue;
+  color: rgb(255, 255, 255);
 }
 
 @keyframes blinker {
@@ -46,4 +46,24 @@ img {
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+p {
+  color: yellow;
+}
+
+.img-with-text {
+  text-align: justify;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.img-with-text img {
+  display: block;
+  margin: 0 auto;
+}
+.img-with-text p {
+  color: black;
 }
